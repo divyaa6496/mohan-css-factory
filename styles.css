@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color: #eee;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px #aaa;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+}
+
+nav a[aria-current='page'] {
+  color: #000;
+  background-color: #d4d4d4;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.outer {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #010202;
+}
+
+.inner {
+  border: 1.3px solid silver;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.B,
+.M,
+.W {
+  position: absolute;
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.B {
+  top: 17px;
+  left: 24px;
+  transform: rotate(-45deg);
+}
+
+.M {
+  top: -10px;
+}
+
+.W {
+  top: 20px;
+  right: 15px;
+  margin-left: 10px;
+  transform: rotate(52deg);
+}
+
+.first {
+  width: 59.5px;
+  height: 60px;
+  border: 1px solid silver;
+  background: #50a5ca;
+}
+
+.second {
+  width: 59px;
+  height: 60px;
+  border: 1px solid silver;
+  background: #e8e8e8;
+}
+
+.three {
+  width: 59.5px;
+  height: 60px;
+  border: 1px solid silver;
+  background: #e8e8e8;
+}
+
+.four {
+  width: 59px;
+  height: 60px;
+  border: 1px solid silver;
+  background: #50a5ca;
+}
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new-outer {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  margin-top: 16px;
+  position: relative;
+}
+
+.first-c,
+.second-c {
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.first-c {
+  position: absolute;
+  left: 50px;
+  opacity: 0.8;
+  background-color: #f79e1c;
+}
+
+.second-c {
+  background: #ea001b;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
+}
+
+.hp-outer {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #1f99d4;
+  border-radius: 50%;
+  background: #1f99d4;
+  position: relative;
+}
+
+.h,
+.p {
+  font-size: 86px;
+  font-weight: bolder;
+  color: #ffffff;
+  position: absolute;
+}
+
+.p {
+  top: -4px;
+  left: 58px;
+  font-style: italic;
+}
+
+.h {
+  top: -12px;
+  left: 14px;
+  font-style: italic;
+}
+
+.mastercard {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.marvel {
+  background-color: #e52321;
+  padding-right: 10px;
+}
+.m,
+.a,
+.r,
+.v,
+.e,
+.l {
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: -8px;
+  color: #ffffff;
+}
+
+.youtube {
+  width: 150px;
+  height: 100px;
+  background: #ff0808;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.play {
+  border-left: 30px solid white;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 45%;
+}
+
+.microsoft {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 25%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+
+.words {
+  font-size: 24px;
+  font-weight: bold;
+  color: #777;
+}
+
+.f1,
+.f2,
+.f3,
+.f4 {
+  width: 100%;
+  height: 100%;
+}
+
+.f1 {
+  background: #f15529;
+}
+.f2 {
+  background: #82bd08;
+}
+.f3 {
+  background: #08a8f0;
+}
+.f4 {
+  background: #ffbb08;
+}
+
+.bbc {
+  width: 200px;
+  height: 100px;
+  background: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header {
+  grid-column: 1/-1;
+}
+
+.sup {
+  font-size: 10px;
+}
+
+.B1,
+.B2,
+.C3 {
+  color: #000000;
+  font-size: 36px;
+  background: #ffffff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  height: 36px;
+}
